@@ -1,0 +1,31 @@
+export const WhatsAppColors = {
+  headerBg: '#075E54',
+  headerText: '#FFFFFF',
+  sentBubble: '#DCF8C6',
+  sentText: '#111B21',
+  receivedBubble: '#FFFFFF',
+  receivedText: '#111B21',
+  senderName: '#00A884',
+  timestamp: '#667781',
+  systemBg: '#FFF9C4',
+  systemText: '#667781',
+  separator: '#FFFFFF',
+  separatorText: '#667781',
+  chatBg: '#ECE5DD',
+  inputBg: '#F0F2F5',
+  inputText: '#111B21',
+  ticks: '#4FC3F7',
+  borderRadius: 8,
+  icon: '#667781',
+  statusText: '#667781',
+} as const;
+
+export const ChatSpacing = {
+  messagePaddingH: 8,
+  messagePaddingV: 6,
+  bubbleMarginH: 8,
+  bubbleMarginV: 4,
+  headerHeight: 56,
+  inputHeight: 48,
+  separatorMargin: 12,
+} as const;
