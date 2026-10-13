@@ -41,3 +41,6 @@ example
 # generated native folders
 /ios
 /android
+
+# Exported WhatsApp media is not part of the app source and exceeds GitHub limits
+/WhatsApp Chat - Dinesh/
