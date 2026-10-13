@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Native builds & cache
+android/
+ios/
+.expo/
+.gradle/
+build/
+.kotlin/
+
+# User raw chats & large assets (not in assets folder)
+WhatsApp Chat - Dinesh/
+WhatsApp Chat - Dinesh
+"WhatsApp Chat - Dinesh/"
+/*.jpeg
+/*.jpg
+/*.png
+*.mp4
+*.zip
+*.tar.gz
+
+# System files
+.DS_Store
+.git/
+.idea/
+.vscode/

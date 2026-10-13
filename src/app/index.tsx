@@ -6,6 +6,7 @@ import { groupMessages } from '../utils/groupMessages';
 import { SplashScreen } from '../screens/SplashScreen';
 import { ChatScreen } from '../screens/ChatScreen';
 import { Message, MessageGroup, SenderProfile } from '../types';
+import { FULL_CHAT } from '../data/fullChat';
 
 type AppState = 'loading' | 'ready' | 'error';
 
@@ -16,14 +17,10 @@ export default function ChatApp() {
   const [senders, setSenders] = useState<Record<string, SenderProfile>>({});
 
   useEffect(() => {
-    InteractionManager.runAfterInteractions(async () => {
+    InteractionManager.runAfterInteractions(() => {
       try {
-        // Load chat.txt from assets
-        const chatRaw = require('@/assets/chat.txt');
-        const text = typeof chatRaw === 'string' ? chatRaw : chatRaw.default;
-
-        // Parse
-        const parsed = parseChat(text);
+        // Parse full chat
+        const parsed = parseChat(FULL_CHAT);
         const senderMap = buildSenderProfiles(parsed);
         const groups = groupMessages(parsed);
 
@@ -31,9 +28,11 @@ export default function ChatApp() {
         setSenders(senderMap);
         setMessageGroups(groups);
         setState('ready');
+        void import('expo-splash-screen').then(({ hideAsync }) => hideAsync());
       } catch (e) {
         console.error('Parse error:', e);
         setState('error');
+        void import('expo-splash-screen').then(({ hideAsync }) => hideAsync());
       }
     });
   }, []);

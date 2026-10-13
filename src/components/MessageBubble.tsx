@@ -9,16 +9,20 @@ interface MessageBubbleProps {
   message: Message;
   senderProfile?: SenderProfile;
   showSenderName?: boolean;
+  searchQuery?: string;
+  isCurrentResult?: boolean;
 }
 
 export const MessageBubble = React.memo(function MessageBubble({
   message,
   senderProfile,
   showSenderName = false,
+  searchQuery = '',
+  isCurrentResult = false,
 }: MessageBubbleProps) {
-  // Handle date separators (system messages with "Today", "Yesterday", etc.)
-  if (message.sender === 'SYSTEM' && (message.text === 'Today' || message.text === 'Yesterday' || message.text.match(/\d{1,2} \w+ \d{4}/))) {
-    return <DateSeparator text={message.text} />;
+  // Hide date separators - they'll be shown in sticky header instead
+  if (message.sender === 'SYSTEM') {
+    return null;
   }
 
   // Handle other system messages
@@ -38,6 +42,8 @@ export const MessageBubble = React.memo(function MessageBubble({
       senderName={senderProfile?.name}
       senderColor={senderProfile?.color}
       showSenderName={showSenderName}
+      searchQuery={searchQuery}
+      isCurrentResult={isCurrentResult}
     />
   );
 });

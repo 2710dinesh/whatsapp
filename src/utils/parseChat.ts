@@ -34,11 +34,12 @@ export function parseChat(rawText: string): Message[] {
 
       let timestamp: Date;
       try {
-        // Always use 12-hour format since WhatsApp exports include AM/PM
-        timestamp = parse(timeStr, 'dd/MM/yy h:mm:ss a', new Date());
+        // WhatsApp exports may use either 12-hour (AM/PM) or 24-hour time.
+        const formatString = ampm ? 'dd/MM/yy h:mm:ss a' : 'dd/MM/yy H:mm:ss';
+        timestamp = parse(timeStr, formatString, new Date());
         if (isNaN(timestamp.getTime())) throw new Error('Invalid date');
       } catch (e) {
-        console.warn(`Failed to parse timestamp: ${timeStr}`);
+        console.error(`Failed to parse timestamp: ${timeStr}`, e);
         continue;
       }
 
@@ -64,7 +65,8 @@ export function parseChat(rawText: string): Message[] {
     messages.push(finalizeMessage(currentMessage, messageIndex));
   }
 
-  return messages.sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
+  // Sort newest to oldest since FlatList will be inverted
+  return messages.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
 }
 
 function detectMessageType(msg: Partial<Message>): void {

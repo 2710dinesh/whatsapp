@@ -3,12 +3,15 @@ import { View, Text, StyleSheet, useWindowDimensions } from 'react-native';
 import { Message } from '../types';
 import { WhatsAppColors, ChatSpacing } from '../constants/colors';
 import { formatMessageTime } from '../utils/dateFormatter';
+import { HighlightedText } from './HighlightedText';
 
 interface TextBubbleProps {
   message: Message;
   senderName?: string;
   senderColor?: string;
   showSenderName?: boolean;
+  searchQuery?: string;
+  isCurrentResult?: boolean;
 }
 
 export const TextBubble = React.memo(function TextBubble({
@@ -16,6 +19,8 @@ export const TextBubble = React.memo(function TextBubble({
   senderName,
   senderColor = WhatsAppColors.senderName,
   showSenderName = false,
+  searchQuery = '',
+  isCurrentResult = false,
 }: TextBubbleProps) {
   const { width } = useWindowDimensions();
   const maxWidth = Math.round(width * 0.75);
@@ -58,12 +63,21 @@ export const TextBubble = React.memo(function TextBubble({
         style={[
           styles.bubble,
           message.isSent ? styles.sentBubble : styles.receivedBubble,
+          isCurrentResult && styles.currentResultBubble,
           { maxWidth },
         ]}
       >
-        <Text style={[styles.text, message.isSent ? styles.sentText : styles.receivedText]}>
-          {message.text}
-        </Text>
+        {searchQuery ? (
+          <HighlightedText
+            text={message.text}
+            searchQuery={searchQuery}
+            style={[styles.text, message.isSent ? styles.sentText : styles.receivedText]}
+          />
+        ) : (
+          <Text style={[styles.text, message.isSent ? styles.sentText : styles.receivedText]}>
+            {message.text}
+          </Text>
+        )}
         <View style={styles.footer}>
           <Text style={styles.timestamp}>{formatMessageTime(message.timestamp)}</Text>
           {message.isSent && <Text style={styles.ticks}>✓✓</Text>}
@@ -103,6 +117,10 @@ const styles = StyleSheet.create({
   receivedBubble: {
     backgroundColor: WhatsAppColors.receivedBubble,
     borderTopLeftRadius: 0,
+  },
+  currentResultBubble: {
+    borderWidth: 2,
+    borderColor: '#FFEB3B',
   },
   text: {
     fontSize: 14.5,

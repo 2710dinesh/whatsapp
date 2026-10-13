@@ -4,7 +4,7 @@
     "slug": "Whatsapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/whatsapp-logo.png",
     "scheme": "whatsapp",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -14,9 +14,8 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/whatsapp-logo.png",
+        "backgroundColor": "#25D366"
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.anonymous.Whatsapp"
@@ -42,6 +41,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3992ea45-e887-4a67-b2e6-e535bff04ac5"
+      }
     }
   }
 }

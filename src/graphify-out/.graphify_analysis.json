@@ -1,0 +1,302 @@
+{
+  "communities": {
+    "0": [
+      "app_index",
+      "app_index_appstate",
+      "app_index_chatapp",
+      "app_index_styles",
+      "app_layout",
+      "data_fullchat",
+      "screens_chatscreen_chatscreen",
+      "types_index",
+      "types_index_mediatype",
+      "types_index_messagetype",
+      "utils_dateformatter",
+      "utils_dateformatter_formatdateseparator",
+      "utils_dateformatter_issameday",
+      "utils_groupmessages",
+      "utils_groupmessages_groupmessages",
+      "utils_groupmessages_issameday",
+      "utils_parsechat",
+      "utils_parsechat_detectmessagetype",
+      "utils_parsechat_finalizemessage",
+      "utils_parsechat_isemojionly",
+      "utils_parsechat_parsechat",
+      "utils_senders",
+      "utils_senders_buildsenderprofiles",
+      "utils_senders_sender_colors"
+    ],
+    "1": [
+      "components_dateseparator",
+      "components_dateseparator_dateseparator",
+      "components_dateseparator_dateseparatorprops",
+      "components_dateseparator_styles",
+      "components_emojimessage",
+      "components_emojimessage_emojimessage",
+      "components_emojimessage_emojimessageprops",
+      "components_emojimessage_styles",
+      "components_highlightedtext",
+      "components_highlightedtext_highlightedtext",
+      "components_highlightedtext_highlightedtextprops",
+      "components_highlightedtext_styles",
+      "components_messagebubble",
+      "components_messagebubble_messagebubbleprops",
+      "components_systemmessage",
+      "components_systemmessage_styles",
+      "components_systemmessage_systemmessage",
+      "components_systemmessage_systemmessageprops",
+      "components_textbubble",
+      "components_textbubble_styles",
+      "components_textbubble_textbubble",
+      "components_textbubble_textbubbleprops",
+      "types_index_message",
+      "utils_dateformatter_formatmessagetime"
+    ],
+    "2": [
+      "components_chatheader",
+      "components_chatheader_backicon",
+      "components_chatheader_chatheader",
+      "components_chatheader_chatheaderprops",
+      "components_chatheader_defaultprofileimage",
+      "components_chatheader_moreicon",
+      "components_chatheader_phoneicon",
+      "components_chatheader_styles",
+      "components_chatheader_videoicon",
+      "components_inputbar",
+      "components_inputbar_attachmenticon",
+      "components_inputbar_emojiicon",
+      "components_inputbar_inputbar",
+      "components_inputbar_microphoneicon",
+      "components_inputbar_styles",
+      "constants_colors",
+      "constants_colors_chatspacing",
+      "constants_colors_whatsappcolors",
+      "screens_splashscreen",
+      "screens_splashscreen_splashscreen",
+      "screens_splashscreen_styles"
+    ],
+    "3": [
+      "components_messagebubble_messagebubble",
+      "components_searchbar",
+      "components_searchbar_searchbar",
+      "components_searchbar_searchbarprops",
+      "components_searchbar_styles",
+      "components_searchscreen",
+      "components_searchscreen_backicon",
+      "components_searchscreen_downicon",
+      "components_searchscreen_searchscreen",
+      "components_searchscreen_searchscreenprops",
+      "components_searchscreen_styles",
+      "components_searchscreen_upicon",
+      "screens_chatscreen",
+      "screens_chatscreen_bgimage",
+      "screens_chatscreen_chatscreenprops",
+      "screens_chatscreen_estimategroupheight",
+      "screens_chatscreen_estimatemessageheight",
+      "screens_chatscreen_styles",
+      "types_index_messagegroup",
+      "types_index_senderprofile"
+    ],
+    "4": [
+      "app_explore",
+      "app_explore_styles",
+      "app_explore_tabtwoscreen",
+      "components_themed_text_themedtext",
+      "components_themed_view_themedview",
+      "components_ui_collapsible",
+      "components_ui_collapsible_collapsible",
+      "components_ui_collapsible_styles",
+      "components_web_badge",
+      "components_web_badge_styles",
+      "components_web_badge_webbadge",
+      "hooks_use_theme_usetheme"
+    ],
+    "5": [
+      "components_app_tabs",
+      "components_app_tabs_apptabs",
+      "components_themed_view",
+      "components_themed_view_themedviewprops",
+      "constants_theme",
+      "constants_theme_colors",
+      "constants_theme_themecolor",
+      "hooks_use_color_scheme",
+      "hooks_use_theme"
+    ],
+    "6": [
+      "components_app_tabs_web",
+      "components_app_tabs_web_apptabs",
+      "components_app_tabs_web_customtablist",
+      "components_app_tabs_web_styles",
+      "components_app_tabs_web_tabbutton",
+      "components_external_link",
+      "components_external_link_externallink",
+      "components_external_link_props"
+    ],
+    "7": [
+      "components_animated_icon",
+      "components_animated_icon_animatedicon",
+      "components_animated_icon_animatedsplashoverlay",
+      "components_animated_icon_glowkeyframe",
+      "components_animated_icon_keyframe",
+      "components_animated_icon_logokeyframe",
+      "components_animated_icon_styles"
+    ],
+    "8": [
+      "components_animated_icon_web",
+      "components_animated_icon_web_animatedicon",
+      "components_animated_icon_web_animatedsplashoverlay",
+      "components_animated_icon_web_glowkeyframe",
+      "components_animated_icon_web_keyframe",
+      "components_animated_icon_web_logokeyframe",
+      "components_animated_icon_web_styles"
+    ],
+    "9": [
+      "components_hint_row",
+      "components_hint_row_hintrow",
+      "components_hint_row_hintrowprops",
+      "components_hint_row_styles",
+      "constants_theme_spacing"
+    ],
+    "10": [
+      "components_themed_text",
+      "components_themed_text_styles",
+      "components_themed_text_themedtextprops",
+      "constants_theme_fonts"
+    ],
+    "11": [
+      "hooks_use_color_scheme_web",
+      "hooks_use_color_scheme_web_usecolorscheme"
+    ],
+    "12": [
+      "data_samplechat"
+    ]
+  },
+  "cohesion": {
+    "0": 0.14492753623188406,
+    "1": 0.12681159420289856,
+    "2": 0.11428571428571428,
+    "3": 0.14210526315789473,
+    "4": 0.3333333333333333,
+    "5": 0.3333333333333333,
+    "6": 0.2857142857142857,
+    "7": 0.2857142857142857,
+    "8": 0.2857142857142857,
+    "9": 0.4,
+    "10": 0.5,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "types_index_message",
+      "label": "Message",
+      "degree": 15
+    },
+    {
+      "id": "hooks_use_theme_usetheme",
+      "label": "useTheme()",
+      "degree": 9
+    },
+    {
+      "id": "types_index_senderprofile",
+      "label": "SenderProfile",
+      "degree": 9
+    },
+    {
+      "id": "components_themed_text_themedtext",
+      "label": "ThemedText()",
+      "degree": 7
+    },
+    {
+      "id": "components_themed_view_themedview",
+      "label": "ThemedView()",
+      "degree": 7
+    },
+    {
+      "id": "types_index_messagegroup",
+      "label": "MessageGroup",
+      "degree": 7
+    },
+    {
+      "id": "constants_colors_whatsappcolors",
+      "label": "WhatsAppColors",
+      "degree": 6
+    },
+    {
+      "id": "constants_theme_spacing",
+      "label": "Spacing",
+      "degree": 6
+    },
+    {
+      "id": "constants_colors_chatspacing",
+      "label": "ChatSpacing",
+      "degree": 5
+    },
+    {
+      "id": "utils_groupmessages_groupmessages",
+      "label": "groupMessages()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TabTwoScreen()",
+      "target": "useTheme()",
+      "source_files": [
+        "app/explore.tsx",
+        "hooks/use-theme.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `TabTwoScreen()` unexpectedly reaches hub `useTheme()`"
+    },
+    {
+      "source": "EmojiMessageProps",
+      "target": "Message",
+      "source_files": [
+        "components/EmojiMessage.tsx",
+        "types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `EmojiMessageProps` unexpectedly reaches hub `Message`"
+    },
+    {
+      "source": "MessageBubbleProps",
+      "target": "SenderProfile",
+      "source_files": [
+        "components/MessageBubble.tsx",
+        "types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "SystemMessageProps",
+      "target": "Message",
+      "source_files": [
+        "components/SystemMessage.tsx",
+        "types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `SystemMessageProps` unexpectedly reaches hub `Message`"
+    },
+    {
+      "source": "TextBubbleProps",
+      "target": "Message",
+      "source_files": [
+        "components/TextBubble.tsx",
+        "types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `TextBubbleProps` unexpectedly reaches hub `Message`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
